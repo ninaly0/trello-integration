@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini trello</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--
+    HEADER
+    -->
+    <header>
+        <div class="header-left">
+            <button class="header-item header-menu">
+                <ion-icon class="usual-icon" name="apps-outline"></ion-icon>
+            </button>
+            <button class="header-item header-home">
+                <ion-icon class="usual-icon" name="home-outline"></ion-icon>
+            </button>
+            <button class="header-boards">
+                <img src="img/logo.png" alt="logo">
+                <span>
+                    Tableaux 
+                </span>
+            </button>
+            <div class="header-research">
+                <input type="search">
+                <span>
+                    <ion-icon class="usual-icon" name="search-outline"></ion-icon>
+                </span>
+            </div>
+
+            <!-- <div class="research-click is-active">
+                <input type="search">
+                <span>
+                    <ion-icon class="special-icon" name="close-outline"></ion-icon>
+                </span>
+            </div> -->
+            <a class="header-title" href="#">
+                <img src="img/header-logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="header-right">
+            <button class="header-item header-plus">
+                <ion-icon class="usual-icon" name="add-outline"></ion-icon>
+            </button>
+            <button class="header-item header-information">
+                <ion-icon class="usual-icon" name="information-circle-outline"></ion-icon>
+            </button>
+            <button class="header-notification">
+                <ion-icon class="usual-icon" name="notifications-outline"></ion-icon>
+            </button>
+            <button class="avatar">
+                <ion-icon class="usual-icon" name="person-circle-outline"></ion-icon>
+            </button>
+        </div>
+
+    </header>
+
+    <!-- / HEADER -->
+
+    <section>
+        
+    <!-- <article class="to_do">
+        <div class="header_article">
+            <h2>Carte</h2>
+            <button type='button' class='close_article'>X</button>
+        </div>
+        <ul>
+            <li>
+                <a href="#">list 01 list 01 list 01list 01 list 01list 01 list 01list 01list 01 list 01list 01 list 01</a>
+                <button type="button">X</button>
+            </li>
+            </ul>
+        <form>
+            <input type="text" placeholder="Saisissez un titre pour cette carte">
+
+            <button class="btn_add_card">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>
+                    Ajouter une carte
+                </span>
+            </button>
+        </form>
+    </article> -->
+
+
+    <!--
+        FORMULAIRE POUR CREER UNE LISTE
+    -->
+        <article class="add">
+            <form class="last-form">
+                <input type="text" placeholder="Saisissez le titre de la liste" value="">
+                <div class="button">
+                    <button class="submit-btn" type="submit">Ajouter une liste</button>
+                    <button type='button' class="close">X</button>
+                </div>
+            </form>
+        </article>
+        <button class="addBtn">
+            <ion-icon name="add-outline"></ion-icon>
+            <span>
+                Ajouter une autre liste
+            </span>
+        </button>
+
+    <!--
+        / FORMULAIRE POUR CREER UNE LISTE
+    -->
+
+
+    <!--
+    MODAL
+    -->
+
+        <div class="modal-wrapper is-hidden">
+            <div class="modal-overlay"></div>
+                <div class="modal">
+                    <div class="modal-header">
+                        <div class="modal-title-header">
+                            <h2 class='modal-title'></h2>
+                            <textarea name="title"></textarea>
+                        </div>
+                        <button type='button' class='modal-close'>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <p class='modal-subtitle'>Dans la liste
+                        <a href='#' class='modal-link'>A faire</a>
+                    </p>
+    
+                    <div class='modal-description'>
+                        <label for='description'>Description</label>
+                        <textarea name="description" id="description" placeholder="Ajouter une description plus détaillée..."></textarea>
+                    </div>
+                    <div class="modal-activite">
+                        <label for="activités">Activité</label>
+                        <textarea name="activité" id="activité" placeholder="Ecrivez un commentaire"></textarea>
+                    </div>
+    
+                </div>
+        </div>
+    <!-- /MODAL-->
+
+    </section>
+
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
