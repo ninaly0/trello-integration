@@ -30,13 +30,6 @@
                     <ion-icon class="usual-icon" name="search-outline"></ion-icon>
                 </span>
             </div>
-
-            <!-- <div class="research-click is-active">
-                <input type="search">
-                <span>
-                    <ion-icon class="special-icon" name="close-outline"></ion-icon>
-                </span>
-            </div> -->
             <a class="header-title" href="#">
                 <img src="img/header-logo.png" alt="Logo">
             </a>
@@ -52,99 +45,101 @@
             <button class="header-notification">
                 <ion-icon class="usual-icon" name="notifications-outline"></ion-icon>
             </button>
-            <button class="avatar">
+            <button class="header-item avatar">
                 <ion-icon class="usual-icon" name="person-circle-outline"></ion-icon>
             </button>
         </div>
 
     </header>
 
-    <!-- / HEADER -->
-
-    <section>
+    <main>
+        <section>
         
-    <!-- <article class="to_do">
-        <div class="header_article">
-            <h2>Carte</h2>
-            <button type='button' class='close_article'>X</button>
-        </div>
-        <ul>
-            <li>
-                <a href="#">list 01 list 01 list 01list 01 list 01list 01 list 01list 01list 01 list 01list 01 list 01</a>
-                <button type="button">X</button>
-            </li>
-            </ul>
-        <form>
-            <input type="text" placeholder="Saisissez un titre pour cette carte">
-
-            <button class="btn_add_card">
-                <ion-icon name="add-outline"></ion-icon>
-                <span>
-                    Ajouter une carte
-                </span>
-            </button>
-        </form>
-    </article> -->
-
-
-    <!--
-        FORMULAIRE POUR CREER UNE LISTE
-    -->
-        <article class="add">
-            <form class="last-form">
-                <input type="text" placeholder="Saisissez le titre de la liste" value="">
-                <div class="button">
-                    <button class="submit-btn" type="submit">Ajouter une liste</button>
-                    <button type='button' class="close">X</button>
+        <!-- <article class="to_do">
+                <div class="article_header">
+                    <h2>Carte</h2>
+                    <button type='button' class='close_article'>X</button>
                 </div>
-            </form>
-        </article>
-        <button class="addBtn">
-            <ion-icon name="add-outline"></ion-icon>
-            <span>
-                Ajouter une autre liste
-            </span>
-        </button>
-
-    <!--
-        / FORMULAIRE POUR CREER UNE LISTE
-    -->
-
-
-    <!--
-    MODAL
-    -->
-
-        <div class="modal-wrapper is-hidden">
-            <div class="modal-overlay"></div>
-                <div class="modal">
-                    <div class="modal-header">
-                        <div class="modal-title-header">
-                            <h2 class='modal-title'></h2>
-                            <textarea name="title"></textarea>
-                        </div>
-                        <button type='button' class='modal-close'>
-                            <ion-icon name="close-outline"></ion-icon>
+                <ul class="card_list">
+                    <li>
+                        <a href="#">list 01 list 01 list 01list 01 list 01list 01 list 01list 01list 01 list 01list 01 list 01</a>
+                        <button type="button">X</button>
+                    </li>
+                </ul>
+                <form>
+                    <input type="text" placeholder="Saisissez un titre pour cette carte">
+                    <div>
+                        <button class="btn_add_card">
+                            <ion-icon name="add-outline"></ion-icon>
+                            <span>
+                                Ajouter une carte
+                            </span>
                         </button>
+                        <button class="card-icon">
+                            <ion-icon name="card-outline"></ion-icon>     
+                        </button>
+                        
                     </div>
-                    <p class='modal-subtitle'>Dans la liste
-                        <a href='#' class='modal-link'>A faire</a>
-                    </p>
-    
-                    <div class='modal-description'>
-                        <label for='description'>Description</label>
-                        <textarea name="description" id="description" placeholder="Ajouter une description plus détaillée..."></textarea>
-                    </div>
-                    <div class="modal-activite">
-                        <label for="activités">Activité</label>
-                        <textarea name="activité" id="activité" placeholder="Ecrivez un commentaire"></textarea>
-                    </div>
-    
+                </form>
+            </article> -->
+        
+        
+            <!--
+                FORMULAIRE POUR CREER UNE LISTE
+            -->
+                <article class="add">
+                    <form class="last-form">
+                        <input type="text" placeholder="Saisissez le titre de la liste" value="">
+                        <div class="button">
+                            <button class="submit-btn" type="submit">
+                                Ajouter une liste
+                            </button>
+                            <button type='button' class="close">X</button>
+                        </div>
+                    </form>
+                </article>
+                <button class="addBtn">
+                    <ion-icon name="add-outline"></ion-icon>
+                    <span>
+                        Ajouter une autre liste
+                    </span>
+                </button>
+        
+            <!--
+            MODAL
+            -->
+        
+                <div class="modal-wrapper is-hidden">
+                    <div class="modal-overlay"></div>
+                        <div class="modal">
+                            <div class="modal-header">
+                                <div class="modal-title-header">
+                                    <h2 class='modal-title'></h2>
+                                    <textarea name="title"></textarea>
+                                </div>
+                                <button type='button' class='modal-close'>
+                                    <ion-icon name="close-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <p class='modal-subtitle'>Dans la liste
+                                <a href='#' class='modal-link'>A faire</a>
+                            </p>
+            
+                            <div class='modal-description'>
+                                <label for='description'>Description</label>
+                                <textarea name="description" id="description" placeholder="Ajouter une description plus détaillée..."></textarea>
+                            </div>
+                            <div class="modal-activite">
+                                <label for="activités">Activité</label>
+                                <textarea name="activité" id="activité" placeholder="Ecrivez un commentaire"></textarea>
+                            </div>
+            
+                        </div>
                 </div>
-        </div>
-    <!-- /MODAL-->
+        
+            </section>
+    </main>
 
-    </section>
 
 
     <script src="app.js"></script>
